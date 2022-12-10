@@ -1,0 +1,126 @@
+
+
+.overlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 10;
+    display: none;
+}
+.wrapper-add {
+	position: relative;
+	background-color:#440F51;;
+	max-width: 600px;
+    width: 100%;
+	min-height: 498px;
+	padding: 60px 160px 88px ;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 5;
+}
+.title-add {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.btn-call {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+
+    padding: 16px 10px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.close-modal {
+    background: transparent;
+    border: none;
+    width: 42px;
+    height: 42px;   
+}
+.form__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+.form__input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    height: 52px;
+}
+.visible {
+	display: block;
+}
+.unvisible {
+    display: none !important;
+}
+
+.overlay-menu {
+    display: block;
+    transform: translateX(-100%);
+    /* transition: transform .5s; */
+}
+/* .active {
+    transform: translateX(0);
+} */
+.header-menu {
+    padding: 32px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu .close-modal {
+    position: static;
+   
+}
+.logo-menu {
+    margin-right: 8%;
+}
+.drop-down-menu {
+    padding-top: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.drop-down-menu li {
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+}
+.drop-down-menu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 25px 0;
+
+}
+/* @media (max-width: 768px) {
+    .overlay-menu {
+        display: block;
+    }
+} */

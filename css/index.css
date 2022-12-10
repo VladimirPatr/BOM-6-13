@@ -1,0 +1,131 @@
+
+html {
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+body {
+    min-width: 320px;
+    min-height: 100vh;
+  
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background: #1B1A1B;
+    color: #FFFFFF;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+}  
+button {
+    padding: 0;
+    cursor: pointer;
+  }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, p, figure, fieldset {
+    margin: 0;
+} 
+iframe {
+    border: none;
+}
+  
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+h1 {
+    font-size: 150px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0;
+}
+h2 {
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container {
+    max-width: 1260px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.pluses, .gallary, .booking, .about-us, .reviews, .faq, .footer {
+    padding: 50px 0;
+}
+/* # {
+    overflow-y: scroll;
+} */
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 904px;      
+    } 
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 26px;
+    }    
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 688px;      
+    } 
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }   
+}   
+    
+    
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 280px;
+    }   
+    h2 {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }   
+}  
+
+
+
+
+
+
+

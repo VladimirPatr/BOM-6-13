@@ -1,0 +1,233 @@
+.footer {
+    padding: 100px 0 10px 0;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+.contacts__item {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-left: 61px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: middle;
+}
+.contacts__item_adress {
+    background-image: url(../img/icon-adress.svg);
+    background-size: 31px;
+    margin-bottom: 39px;
+}
+.contacts__item_tel {
+    background-image: url(../img/icon-tel.svg);
+    display: inline-block;
+    margin-bottom: 11px;
+    transition: color .5s ease-in-out;    
+}
+.contacts__item_mail {
+    display: block;
+    background-image: url(../img/icon-mail.svg);
+    margin-bottom: 40px;
+    transition: color .4s ease-in-out; 
+}
+.footer__mail {
+    transition: color .2s ease-in-out;  
+}
+
+.contacts__item_tel:hover, .contacts__item_mail:hover, .footer__mail:hover {
+    color: var( --text-color, #CD06FF);
+}
+
+.social__icon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-right: 28px;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+.social__icon img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
+.footer__wrapper-map {
+    flex-basis: 680px;
+}
+.footer__wrapper-map {
+    object-fit: cover;
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer__bottom__wrapper {
+   text-align: right;
+}
+.footer__bottom__wrapper p:nth-child(1) {
+    margin-bottom: 6px;
+}
+.footer__bottom__wrapper p:nth-child(2) {
+    text-align: right;
+}
+.social__icon a svg path {
+    transition: fill .2s ease-in-out;
+}
+
+.social__icon a svg:hover #instagram, .social__icon a svg:hover #vk, .social__icon a svg:hover #facebook, .social__icon a svg:hover #telegramm,
+.social__icona svg:focus #instagram, .social__icon a svg:focus #vk, .social__icon a svg:focus #facebook, .social__icon a svg:focus #telegramm { 
+    fill:#EADEED;
+  }
+  .social__icon a svg:active #instagram, .social__icon a svg:active #vk, .social__icon a svg:active #facebook, .social__icon a svg:active #telegramm { 
+    fill:#CD06FF;
+  }
+
+  @media (max-width: 1024px) {
+    .footer {
+        padding: 28px 0 19px 0;
+    }
+    .footer__wrapper {
+        margin-bottom: 92px;
+    }
+    .contacts__item {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        padding-left: 39px;
+    }
+    .contacts__item_adress {
+        background-size: 26px;
+    }
+    .contacts__item_tel {
+        background-size: 26px;
+        margin-bottom: 7px;
+    }
+    .contacts__item_mail {
+        background-size: 26px;
+    }
+   
+    .social__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 26px;
+    }
+    .social__icon svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .footer__wrapper-map {
+        flex-basis: 542px;
+        height: 274px;
+    }
+    .footer__wrapper-map img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   
+@media (max-width: 768px) {
+    .footer {
+        padding: 35px 0 18px 0;
+    }
+    .footer__wrapper {
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .contacts__item {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        background-position: 45px top;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contacts__item_adress {
+        margin-bottom: 27px;
+    }
+    .contacts__item_tel {
+        background-position: 35px;
+        margin-bottom: 27px;
+    }
+    .contacts__item_mail {
+        padding-left: 40px;
+        background-position: 0;
+        margin-bottom: 27px;
+    }
+    .social {
+        display: flex;
+        gap: 26px;
+        justify-content: center;
+    }
+    .social__icon {
+            margin: 0;
+    }
+    .footer__wrapper-map {
+        flex-basis: 100%;
+        height: 337px;
+    }
+}   
+    
+    
+
+@media (max-width: 320px) {
+    .footer {
+        padding: 15px 0 24px 0;
+    }
+    .footer__wrapper {
+        margin-bottom: 63px;
+        gap: 35px;
+    }
+    .contacts__item {
+        background-position: 45px top;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contacts__item {
+        background-size: 20px;
+        background-position: 50px 0;
+    }
+    .contacts__item_adress {
+        margin-bottom: 10px;
+    }
+    .contacts__item_tel {
+        background-position: 32px;
+        margin-bottom: 10px;
+    }
+    .contacts__item_mail {
+        padding-left: 0px;
+        background-position: 10px;
+        margin-bottom: 10px;
+    }
+    .social {
+        gap: 20px;
+    }
+   
+    .footer__wrapper-map {
+        flex-basis: 100%;
+        height: 194px;
+    }
+    .footer__bottom {
+        flex-direction: column; 
+        justify-content: center;
+        font-size: 12px;
+        line-height: 16px;
+        gap: 19px;
+        text-align: center;
+    }
+    .footer__bottom__wrapper {
+        text-align: center;
+     }
+}  
+
